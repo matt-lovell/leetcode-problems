@@ -12,13 +12,14 @@ var romanToInt = function (s) {
         // Check depends on the character
         if (char === 'I') {
             const nextChar = sArray[index + 1];
-            // If next character is one that causes a subtraction, subtract the value from the total
+            // If next character is not one that causes a subtraction, add the value to the total
             if (nextChar !== 'V' && nextChar !== 'X')
                 total += charValue(char);
-            // Else add the value to total
+            // Else subtract the value from total
             else
                 total -= charValue(char);
         }
+        // Repeat for other 2 characters
         else if (char === 'X') {
             const nextChar = sArray[index + 1];
             if (nextChar !== 'L' && nextChar !== 'C')
