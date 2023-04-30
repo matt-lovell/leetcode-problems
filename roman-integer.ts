@@ -1,6 +1,4 @@
-const s = "MMXXVIII"
-
-// Only 3 characters can be used as subtractions [I,X or C]
+// Solution to https://leetcode.com/problems/roman-to-integer/
 
 var romanToInt = function(s: string) {
     // Create a variable to store the full value of the Roman Numeral, init as 0.
@@ -58,6 +56,3 @@ function charValue(char: string) {
     }
 
 }
-
-const romanInt = romanToInt(s)
-console.log('Roman Int = ', romanInt)

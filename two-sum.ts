@@ -1,10 +1,5 @@
+//Solution to https://leetcode.com/problems/two-sum/
 
-/**
- * Solution to https://leetcode.com/problems/two-sum/
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
 var twoSum = function (nums: number[], target: number) {
     // Convert the array to a map, keyed on value with value of index in the array
     let numsMap: Record<number, number> = {}
